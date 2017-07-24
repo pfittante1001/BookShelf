@@ -19,10 +19,10 @@ namespace BookShelf.Models
         public string Description { get; set; }
         public string ISBN { get; set; }
 
-        [ForeignKey("Category")]//foriegn key estalishes a relation with another class or table
+        [ForeignKey("Category")]//foriegn key estalishes the Category class
 
         public int CatagoryId { get; set; }
-        public virtual Category Category { get; set; }//The first Category is called a navigation property
+        public virtual Category Category { get; set; }//The first Category is called a navigation property which points to the Category class.
 
     }
 }
